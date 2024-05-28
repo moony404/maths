@@ -55,12 +55,17 @@ int main(int argc, char *argv[])
 				ab = sqrt((x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a));
 				int first = 0;
 				first = (x_b+x_a)*(x_b+x_a);
-				system("cls");
 				printf("%f\n",ab);
+				system("cls");
 			break;
 			default:
 				printf("Error, you didn't use a correct number or a inexepted error occured\n");
+				sqr(2); //return 4
 			break;
 		}
 	}
+}
+
+int sqr(float a) {
+	return a*a;
 }
