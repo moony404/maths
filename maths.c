@@ -5,6 +5,7 @@
 
 int main(int argc, char *argv[])
 {
+	int e = 2.71;
 	unsigned char i = 1;
 	int sw = 0;
 	float ab = 0;
@@ -16,7 +17,6 @@ int main(int argc, char *argv[])
 	float x_b = 0;
 	float y_b = 0;
 	while (i==1) {
-		system("cls");
 		printf("######## maths ########\n");
 		printf("0. Quitter\n");
 		printf("1. Coordonees k du milieu d'un segment\n");
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		scanf("%d",&sw);
 		switch (sw) {
 			case 0:
-				exit();
+				exit(1);
 			break;
 			case 1:
 				printf("Valeur decimale de x_a :\n"); //x_a
@@ -66,5 +66,13 @@ int main(int argc, char *argv[])
 				printf("Error, you didn't use a correct number or a inexepted error occured\n");
 			break;
 		}
+	}
+}
+
+void check_if_not_a_number (float a) {
+	if (isdigit(a)==1) {
+		printf("number\n");
+	} else if (isdigit(a)==0) {
+		printf("not a number\n");
 	}
 }
