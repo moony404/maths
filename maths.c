@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 	float y_b = 0;
 	while (i==1) {
 		printf("######## maths ########\n");
+		printf("0. Quitter\n");
 		printf("1. Coordonees k du milieu d'un segment\n");
 		printf("2. Longueur d'un segment\n");
 		scanf("%d",&sw);
@@ -60,12 +61,7 @@ int main(int argc, char *argv[])
 			break;
 			default:
 				printf("Error, you didn't use a correct number or a inexepted error occured\n");
-				sqr(2); //return 4
 			break;
 		}
 	}
-}
-
-int sqr(float a) {
-	return a*a;
 }
