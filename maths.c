@@ -60,12 +60,7 @@ int main(int argc, char *argv[])
 			break;
 			default:
 				printf("Error, you didn't use a correct number or a inexepted error occured\n");
-				caca();
 			break;
 		}
 	}
-}
-
-unsigned char caca () {
-	printf("test\n");
 }
