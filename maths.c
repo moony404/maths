@@ -51,11 +51,9 @@ int main(int argc, char *argv[])
 				printf("a(%f;%f)\n",x_a,y_a); //coordonnees de a
 				printf("b(%f;%f)\n",x_b,y_b); //coordonnees de b
 				//calcul
-				ab_nosqrt = (x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a);
-				ab = sqrt(ab_nosqrt);
-				double(ab);
-				// ab = sqrt
-				printf("%f",ab);
+				// ab_nosqrt = (x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a);
+				ab = sqrt((x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a));
+				printf("%f\n",ab);
 			break;
 			default:
 				printf("Error, you didn't use a correct number or a inexepted error occured\n");
