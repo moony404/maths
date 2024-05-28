@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 				printf("b(%f;%f)\n",x_b,y_b); //coordonnees de b
 				//calcul
 				// ab_nosqrt = (x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a);
-				ab = sqrt((x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a));
+				ab = sqrt((x_b-x_a)*(x_b-x_a)+(y_b-y_a)*(y_b-y_a));
 				printf("%f\n",ab);
 			break;
 			default:
