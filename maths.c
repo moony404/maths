@@ -16,12 +16,16 @@ int main(int argc, char *argv[])
 	float x_b = 0;
 	float y_b = 0;
 	while (i==1) {
+		system("cls");
 		printf("######## maths ########\n");
 		printf("0. Quitter\n");
 		printf("1. Coordonees k du milieu d'un segment\n");
 		printf("2. Longueur d'un segment\n");
 		scanf("%d",&sw);
 		switch (sw) {
+			case 0:
+				exit();
+			break;
 			case 1:
 				printf("Valeur decimale de x_a :\n"); //x_a
 				scanf("%f",&x_a);
@@ -57,7 +61,6 @@ int main(int argc, char *argv[])
 				int first = 0;
 				first = (x_b+x_a)*(x_b+x_a);
 				printf("%f\n",ab);
-				system("cls");
 			break;
 			default:
 				printf("Error, you didn't use a correct number or a inexepted error occured\n");
