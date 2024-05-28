@@ -5,7 +5,6 @@
 
 int main(int argc, char *argv[])
 {
-	int e = 2.71;
 	unsigned char i = 1;
 	int sw = 0;
 	float ab = 0;
@@ -69,7 +68,7 @@ int main(int argc, char *argv[])
 	}
 }
 
-void check_if_not_a_number (float a) {
+int check_if_not_a_number (float a) {
 	if (isdigit(a)==1) {
 		printf("number\n");
 	} else if (isdigit(a)==0) {
