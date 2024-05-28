@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdio.h>
+#include <windows.h>
 #include <math.h>
 
 int main(int argc, char *argv[])
@@ -16,6 +17,9 @@ int main(int argc, char *argv[])
 	printf("######## maths ########\n");
 	printf("1. Coordonées k du milieu d'un segment\n");
 	printf("2. Longueur d'un segment\n");
+	while (i==1) {
+		printf("here\n");
+	}
 	scanf("%d",&sw);
 	switch (sw) {
 		case 1:
