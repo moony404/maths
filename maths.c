@@ -67,11 +67,3 @@ int main(int argc, char *argv[])
 		}
 	}
 }
-
-int check_if_not_a_number (float a) {
-	if (isdigit(a)==1) {
-		printf("number\n");
-	} else if (isdigit(a)==0) {
-		printf("not a number\n");
-	}
-}
