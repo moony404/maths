@@ -57,8 +57,6 @@ int main(int argc, char *argv[])
 				//calcul
 				// ab_nosqrt = (x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a);
 				ab = sqrt((x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a));
-				int first = 0;
-				first = (x_b+x_a)*(x_b+x_a);
 				printf("%f\n",ab);
 			break;
 			default:
