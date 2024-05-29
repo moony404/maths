@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 				exit(1);
 			break;
 			case 1:
-				printf("Valeur decimale de x_a :\n"); //x_a
+				printf("Valeur decimale de x_a :"); //x_a
 				scanf("%f",&x_a);
-				printf("Valeur decimale de y_a :\n"); //y_a
+				printf("Valeur decimale de y_a :"); //y_a
 				scanf("%f",&y_a);
-				printf("Valeur decimale de x_b :\n"); //x_b
+				printf("Valeur decimale de x_b :"); //x_b
 				scanf("%f",&x_b);
-				printf("Valeur decimale de y_b :\n"); //y_b
+				printf("Valeur decimale de y_b :"); //y_b
 				scanf("%f",&y_b);
 				printf("a(%f;%f)\n",x_a,y_a); //coordonnees de a
 				printf("b(%f;%f)\n",x_b,y_b); //coordonnees de b
@@ -44,13 +44,13 @@ int main(int argc, char *argv[])
 			break;
 			case 2:
 				printf("");
-				printf("Valeur decimale de x_a :\n"); //x_a
+				printf("Valeur decimale de x_a :"); //x_a
 				scanf("%f",&x_a);
-				printf("Valeur decimale de y_a :\n"); //y_a
+				printf("Valeur decimale de y_a :"); //y_a
 				scanf("%f",&y_a);
-				printf("Valeur decimale de x_b :\n"); //x_b
+				printf("Valeur decimale de x_b :"); //x_b
 				scanf("%f",&x_b);
-				printf("Valeur decimale de y_b :\n"); //y_b
+				printf("Valeur decimale de y_b :"); //y_b
 				scanf("%f",&y_b);
 				printf("a(%f;%f)\n",x_a,y_a); //coordonnees de a
 				printf("b(%f;%f)\n",x_b,y_b); //coordonnees de b
