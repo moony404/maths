@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		scanf("%d",&sw);
 		switch (sw) {
 			case 0:
-				exit(1);
+				exit(1); //exit the code
 			break;
 			case 1:
 				printf("Valeur decimale de x_a :"); //x_a
@@ -43,7 +43,6 @@ int main(int argc, char *argv[])
 				printf("k(%f;%f)\n",x_k,y_k);
 			break;
 			case 2:
-				printf("");
 				printf("Valeur decimale de x_a :"); //x_a
 				scanf("%f",&x_a);
 				printf("Valeur decimale de y_a :"); //y_a
@@ -55,7 +54,6 @@ int main(int argc, char *argv[])
 				printf("a(%f;%f)\n",x_a,y_a); //coordonnees de a
 				printf("b(%f;%f)\n",x_b,y_b); //coordonnees de b
 				//calcul
-				// ab_nosqrt = (x_b+x_a)*(x_b+x_a)-(y_b+y_a)*(y_b+y_a);
 				ab = sqrt((x_b-x_a)*(x_b-x_a)+(y_b-y_a)*(y_b-y_a));
 				printf("%f\n",ab);
 			break;
