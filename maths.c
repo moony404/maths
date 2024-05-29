@@ -5,6 +5,7 @@
 
 int main(int argc, char *argv[])
 {
+	char check_continue = 0;
 	unsigned char i = 1;
 	int sw = 0;
 	float ab = 0;
@@ -55,10 +56,11 @@ int main(int argc, char *argv[])
 				printf("b(%f;%f)\n",x_b,y_b); //coordonnees de b
 				//calcul
 				ab = sqrt((x_b-x_a)*(x_b-x_a)+(y_b-y_a)*(y_b-y_a));
-				printf("%f\n",ab);
+				printf("La distance est %f\n",ab);
+				scanf("%c",&check_continue);
 			break;
 			default:
-				printf("Error, you didn't use a correct number or a inexepted error occured\n");
+				printf("Error, you didn't use a correct number or an inexepted error occured\n");
 			break;
 		}//end of the switch
 	}//enf of the while
