@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 				//soit k le milieu de [AB]
 				x_k = (x_a+x_b)/2;
 				y_k = (y_a+y_b)/2;
-				printf("k(%f;%f)\n",x_k,y_k);
+				printf("=> k(%f;%f)\n",x_k,y_k);
 			break;
 			case 2:
 				printf("Valeur decimale de x_a :"); //x_a
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 				printf("b(%f;%f)\n",x_b,y_b); //coordonnees de b
 				//calcul
 				ab = sqrt((x_b-x_a)*(x_b-x_a)+(y_b-y_a)*(y_b-y_a));
-				printf("La distance est %f\n",ab);
+				printf("=> La distance est %f\n",ab);
 				scanf("%c",&check_continue);
 			break;
 			default:
