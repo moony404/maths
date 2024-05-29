@@ -21,12 +21,13 @@ int main(int argc, char *argv[])
 		printf("0. Quitter\n");
 		printf("1. Coordonees k du milieu d'un segment\n");
 		printf("2. Longueur d'un segment\n");
+		printf("3. Point d'intersection entre deux droites\n");
 		scanf("%d",&sw);
 		switch (sw) {
 			case 0:
 				exit(1); //exit the code
 			break;
-			case 1:
+			case 1: //Coordonees k du milieu d'un segment
 				printf("Valeur decimale de x_a :"); //x_a
 				scanf("%f",&x_a);
 				printf("Valeur decimale de y_a :"); //y_a
@@ -43,7 +44,7 @@ int main(int argc, char *argv[])
 				y_k = (y_a+y_b)/2;
 				printf("=> k(%f;%f)\n",x_k,y_k);
 			break;
-			case 2:
+			case 2: //Longueur d'un segment
 				printf("Valeur decimale de x_a :"); //x_a
 				scanf("%f",&x_a);
 				printf("Valeur decimale de y_a :"); //y_a
@@ -58,6 +59,9 @@ int main(int argc, char *argv[])
 				ab = sqrt((x_b-x_a)*(x_b-x_a)+(y_b-y_a)*(y_b-y_a));
 				printf("=> La distance est %f\n",ab);
 				scanf("%c",&check_continue);
+			break;
+			case 3: //Point d'intersection entre deux droites
+				printf("here\n");
 			break;
 			default:
 				printf("Error, you didn't use a correct number or an inexepted error occured\n");
