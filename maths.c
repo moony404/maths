@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("0. Quitter\n");
 		printf("1. Coordonees k du milieu d'un segment\n");
 		printf("2. Longueur d'un segment\n");
-		printf("3. Point d'intersection entre deux droites\n");
+		printf("3. Mathematiques simples\n");
 		scanf("%d",&sw);
 		switch (sw) {
 			case 0:
