@@ -6,17 +6,18 @@
 int main(int argc, char *argv[])
 {
 	char check_continue = 0;
-	unsigned char i = 1;
-	unsigned char sw = 0;
-	unsigned char sw2= 0;
-	float ab = 0;
-	float ab_nosqrt = 0;
-	float x_k = 0;
-	float y_k = 0;
-	float x_a = 0;
-	float y_a = 0;
-	float x_b = 0;
-	float y_b = 0;
+	unsigned char i=1;
+	unsigned char sw=0;
+	unsigned char sw2=0;
+	float user_float=0;
+	float ab=0;
+	float ab_nosqrt=0;
+	float x_k=0;
+	float y_k=0;
+	float x_a=0;
+	float y_a=0;
+	float x_b=0;
+	float y_b=0;
 	//the wile loop to run the programm infinitly
 	while (i==1) {
 		printf("######## maths ########\n");
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 		scanf("%d",&sw);
 		switch (sw) {
 			case 0:
-				exit(1); //exit the code
+				exit(1); //exit the programm
 			break;
 			case 1: //Coordonees k du milieu d'un segment
 				printf("Valeur decimale de x_a :"); //x_a
@@ -64,9 +65,18 @@ int main(int argc, char *argv[])
 			break;
 			case 3: //another switch to make a "subfolder" of the first switch
 				printf("here\n");
+				printf("######## maths ########\n");
+				printf("0. Quitter\n"); //exit(1)
+				printf("1. Racine carre\n");
+				printf("2. Longueur d'un segment\n");
+				printf("3. Mathematiques simples\n"); //switch(sw2)
 				switch(sw2) {
+					case 0:
+						exit(1); //exit the programm
+					break;
 					case 1:
 						printf("1");
+						scanf("%f",&user_float);
 					break;
 					case 2:
 						printf("2");
@@ -75,13 +85,14 @@ int main(int argc, char *argv[])
 						printf("3");
 					break;
 					default:
-						printf("error");
+						printf("Error, you didn't use a correct number or an inexepted error occured\n");
+						exit(1); //exit the programm
 					break;
 				}
 			break;
 			default:
 				printf("Error, you didn't use a correct number or an inexepted error occured\n");
-				exit(1);
+				exit(1); //exit the programm
 			break;
 		}//end of the switch
 	}//enf of the while
