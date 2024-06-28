@@ -7,7 +7,8 @@ int main(int argc, char *argv[])
 {
 	char check_continue = 0;
 	unsigned char i = 1;
-	int sw = 0;
+	unsigned char sw = 0;
+	unsigned char sw2= 0;
 	float ab = 0;
 	float ab_nosqrt = 0;
 	float x_k = 0;
@@ -16,12 +17,13 @@ int main(int argc, char *argv[])
 	float y_a = 0;
 	float x_b = 0;
 	float y_b = 0;
+	//the wile loop to run the programm infinitly
 	while (i==1) {
 		printf("######## maths ########\n");
-		printf("0. Quitter\n");
+		printf("0. Quitter\n"); //exit(1)
 		printf("1. Coordonees k du milieu d'un segment\n");
 		printf("2. Longueur d'un segment\n");
-		printf("3. Mathematiques simples\n");
+		printf("3. Mathematiques simples\n"); //switch(sw2)
 		scanf("%d",&sw);
 		switch (sw) {
 			case 0:
@@ -42,7 +44,7 @@ int main(int argc, char *argv[])
 				//soit k le milieu de [AB]
 				x_k = (x_a+x_b)/2;
 				y_k = (y_a+y_b)/2;
-				printf("=> k(%f;%f)\n",x_k,y_k);
+				printf("=> k(%f;%f)\n",x_k,y_k); //print the result
 			break;
 			case 2: //Longueur d'un segment
 				printf("Valeur decimale de x_a :"); //x_a
@@ -60,8 +62,22 @@ int main(int argc, char *argv[])
 				printf("=> La distance est %f\n",ab);
 				scanf("%c",&check_continue);
 			break;
-			case 3: //Point d'intersection entre deux droites
+			case 3: //another switch to make a "subfolder" of the first switch
 				printf("here\n");
+				switch(sw2) {
+					case 1:
+						printf("1");
+					break;
+					case 2:
+						printf("2");
+					break;
+					case 3:
+						printf("3");
+					break;
+					default:
+						printf("error");
+					break;
+				}
 			break;
 			default:
 				printf("Error, you didn't use a correct number or an inexepted error occured\n");
