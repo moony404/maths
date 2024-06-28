@@ -68,8 +68,8 @@ int main(int argc, char *argv[])
 				printf("######## maths ########\n");
 				printf("0. Quitter\n"); //exit(1)
 				printf("1. Racine carre\n");
-				printf("2. Longueur d'un segment\n");
-				printf("3. Mathematiques simples\n"); //switch(sw2)
+				printf("2. xxx\n");
+				printf("3. xxx\n");
 				switch(sw2) {
 					case 0:
 						exit(1); //exit the programm
@@ -77,6 +77,8 @@ int main(int argc, char *argv[])
 					case 1:
 						printf("1");
 						scanf("%f",&user_float);
+						printf("%f", user_float);
+						// result=sqrt(user_float)
 					break;
 					case 2:
 						printf("2");
