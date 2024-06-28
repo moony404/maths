@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 			break;
 			default:
 				printf("Error, you didn't use a correct number or an inexepted error occured\n");
-				exit(0);
+				exit(1);
 			break;
 		}//end of the switch
 	}//enf of the while
